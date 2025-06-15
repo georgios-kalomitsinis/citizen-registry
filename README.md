@@ -5,7 +5,6 @@ This repository contains a citizen registry system implemented in Java, develope
 ---
 
 ## 🎯 Features
-
 - Add, delete, update, and search citizen records
 - In-memory registry with **serialization/deserialization**
 - Bonus: Database-backed registry with **auto DB/table creation**
@@ -14,9 +13,7 @@ This repository contains a citizen registry system implemented in Java, develope
 ---
 
 ## 🧩 Data Model
-
 Each citizen record includes:
-
 - **ID (ΑΤ)**: 8-character unique identifier *(required)*
 - **First Name**, **Last Name**, **Gender**, **Birth Date** *(required)*
 - **Tax ID (ΑΦΜ)**: 9-digit optional, must be unique if provided
@@ -25,7 +22,6 @@ Each citizen record includes:
 ---
 
 ## 🧱 Project Structure
-
 ```
 ├── src/                         → Java source code
 │   ├── Application.java         → Main application loop  
@@ -40,21 +36,15 @@ Each citizen record includes:
 ```
 
 ---
-
 ## 💾 Serialization
-
 After each add/delete/update operation, the in-memory registry is serialized to a `.ser` file. At startup, it is deserialized to recover the previous state.
-
 - The file path can be:
   - passed via command-line argument
   - or defaulted (e.g., `data/citizens.ser`)
-
 ---
 
 ## 🛢️ Database Integration
-
 The application supports persisting citizen records to a relational database.
-
 - `DatabaseManager.java` handles:
   - Establishing connection
   - Auto-creating the database and table if they don’t exist
@@ -80,7 +70,6 @@ CREATE TABLE Citizens (
 ---
 
 ## ✅ Execution
-
 Compile and run via command line or any IDE
 
 ```bash
@@ -90,5 +79,4 @@ javac -d bin src/Application.java
 ---
 
 ## 📄 License
-
 Distributed under the [MIT License](LICENSE).
