@@ -81,11 +81,10 @@ CREATE TABLE Citizens (
 
 ## ✅ Execution
 
-Compile and run via command line or any IDE:
+Compile and run via command line or any IDE
 
 ```bash
-javac -d bin src/*.java
-java -cp bin Application data/citizens.ser
+javac -d bin src/Application.java
 ```
 
 ---
