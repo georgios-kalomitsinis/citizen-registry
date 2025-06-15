@@ -37,7 +37,7 @@ Each citizen record includes:
 
 ---
 ## 💾 Serialization
-After each add/delete/update operation, the in-memory registry is serialized to a `.ser` file. At startup, it is deserialized to recover the previous state.
+After each `add/delete/update` operation, the in-memory registry is serialized to a `.ser` file. At startup, it is deserialized to recover the previous state.
 - The file path can be:
   - passed via command-line argument
   - or defaulted (e.g., `data/citizens.ser`)
