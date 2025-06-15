@@ -31,7 +31,7 @@ Each citizen record includes:
 │   ├── Application.java         → Main application loop  
 │   ├── Citizen.java             → POJO for citizen entity  
 │   ├── Registry.java            → Registry management with  
-│   └── DatabaseManager.java     → Database I/O logic (bonus)  
+│   └── DatabaseManager.java     → Database I/O logic 
 │
 ├── sql/
 │   └── sql_queries_first_exercise_bonus.sql   → All DDL/DML   
@@ -51,7 +51,7 @@ After each add/delete/update operation, the in-memory registry is serialized to 
 
 ---
 
-## 🛢️ Bonus: Database Integration
+## 🛢️ Database Integration
 
 The application supports persisting citizen records to a relational database.
 
